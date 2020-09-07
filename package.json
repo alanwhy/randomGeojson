@@ -1,0 +1,19 @@
+{
+  "name": "randomGeojson",
+  "version": "1.0.0",
+  "description": "Generate random geojson data",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "babel-build": "babel randomGeojson-es6.js -o randomGeojson.js",
+    "uglifyjs": "uglifyjs randomGeojson.js -m -c -o randomGeojson.min.js"
+  },
+  "keywords": [],
+  "author": "alanwhy",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "uglify-js": "^3.10.4"
+  }
+}
